@@ -1,18 +1,24 @@
 import React from 'react'
-import Header from '../component'
+import Header from '../component/header'
 
 export default function HeaderContainer() {
   return (
     <Header>
-        <Header.Frame>
-            <Header.Logo>Vidya Sadan</Header.Logo>
-            <Header.ButtonLink>Home</Header.ButtonLink>
-            <Header.ButtonLink>Gallery</Header.ButtonLink>
-            <Header.ButtonLink>About</Header.ButtonLink>
-            <Header.ButtonLink>Contact</Header.ButtonLink>
-            <Header.Login>Login</Header.Login>
-            <Header.JoinUs>Join Us</Header.JoinUs>
-        </Header.Frame>
+      <Header.Frame>
+        <Header.Logo>Vidya Sadan</Header.Logo>
+        <Header.Div>
+          <Header.ButtonLink>Home</Header.ButtonLink>
+          <Header.ButtonLink>Gallery</Header.ButtonLink>
+          <Header.ButtonLink>About</Header.ButtonLink>
+          <Header.ButtonLink>Contact</Header.ButtonLink>
+        </Header.Div>
+        <Header.Div>
+          <Header.Login>Login</Header.Login>
+          <Header.ButtonLink>
+            <Header.JoinUs>JOIN US</Header.JoinUs>
+          </Header.ButtonLink>
+        </Header.Div>
+      </Header.Frame>
     </Header>
   )
 }
