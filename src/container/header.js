@@ -6,7 +6,6 @@ export default function HeaderContainer({ children, ...restProps }) {
   const [header, setHeader] = useState(true);
   let lastScroll = 0;
   const listenScrollEvent = (event) => {
-    console.log(window.pageYOffset);
     const currentScroll = window.pageYOffset;
     if (currentScroll <= 0) {
       setHeader(true);

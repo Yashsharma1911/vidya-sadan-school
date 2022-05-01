@@ -17,6 +17,7 @@ export const Container = styled.div`
     height: 80px;
     margin-top: 0;
     box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.13);
+    background: #fff;
   }
 `;
 
