@@ -100,8 +100,8 @@ export default function HeaderContainer({ children, ...restProps }) {
           </Header.BurgerMenu>
           <Header.Overlay show={burgerStatus} />
         </Header.Frame>
-        {children}
       </Header>
+      {children}
     </>
   );
 }
