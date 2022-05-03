@@ -4,6 +4,7 @@ import CardContainer from '../container/card';
 import JumbotronContainer from '../container/jumbotron';
 import HeaderContainer from "../container/header";
 import Feature from "../component/feature";
+import FooterContainer from "../container/footer";
 import TestimonialContainer from '../container/testimonial';
 import FaqsContainer from '../container/faqs';
 
@@ -46,6 +47,7 @@ export default function Home() {
       <JumbotronContainer />
       <TestimonialContainer/>
       <FaqsContainer />
+      <FooterContainer />
     </>
   );
 }

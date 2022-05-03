@@ -36,15 +36,10 @@ export const HeadLine = styled.p`
   font-weight: 700;
   font-size: 58px;
   line-height: 80px;
-  /* or 138% */
-
   letter-spacing: 0.2px;
-
   /* text-color */
 
   color: #252b42;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 1;
