@@ -34,6 +34,10 @@ export const Container = styled.div`
   ${Div}:nth-child(2) {
     margin-top: 80px;
   }
+
+  @media(max-width: 1000px){
+    padding: 160px 0 100px 0;
+  }
 `;
 export const Frame = styled.div`
   max-width: 324px;
