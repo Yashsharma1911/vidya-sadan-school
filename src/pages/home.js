@@ -7,6 +7,7 @@ import Feature from "../component/feature";
 import FooterContainer from "../container/footer";
 import TestimonialContainer from '../container/testimonial';
 import FaqsContainer from '../container/faqs';
+import NewsletterContainer from '../container/newsletter';
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
       <JumbotronContainer />
       <TestimonialContainer/>
       <FaqsContainer />
+      <NewsletterContainer />
       <FooterContainer />
     </>
   );

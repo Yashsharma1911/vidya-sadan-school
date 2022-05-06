@@ -36,7 +36,7 @@ Accordion.Item = function AccordionItem({ children, ...restProps }) {
 Accordion.Header = function AccordionHeader({ children, ...restProps }) {
   const { toggleShow, setToggleShow } = useContext(ToggleContext);
   return (
-    <Header onClick={() => setToggleShow(!toggleShow)} rotate={toggleShow}{...restProps}>
+    <Header onClick={() => setToggleShow(!toggleShow)} invert={toggleShow}{...restProps}>
       {children}
     </Header>
   );
@@ -51,7 +51,6 @@ Accordion.Img = function AccordianImg({ children, ...restProps}) {
 
 Accordion.Body = function AccordionBody({ children, ...restProps }) {
   const { toggleShow } = useContext(ToggleContext);
-  /* return toggleShow ? <Body {...restProps}>{children}</Body> : null; */
 
   return (
     <Body className={toggleShow ? 'open' : 'closed'} {...restProps}>

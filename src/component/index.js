@@ -5,3 +5,4 @@ export { default as Feature } from "./feature";
 export { default as Accordian} from './accordian'
 export { default as Footer } from "./footer";
 export { default as Testimonial } from "./testimonial";
+export {default as NewsLetter } from "./newsletter";

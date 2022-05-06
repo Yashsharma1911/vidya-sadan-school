@@ -106,7 +106,7 @@ padding-left: 32px;
 
   ${Img}{
     transition: transform 0.2s;
-    transform: ${({ rotate }) => (rotate ? "rotate(180deg)" : "rotate(0deg)")};
+    transform: ${({ invert }) => (invert ? "rotate(180deg)" : "rotate(0deg)")};
   }
 
   }
