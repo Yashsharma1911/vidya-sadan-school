@@ -4,6 +4,10 @@ import CardContainer from '../container/card';
 import JumbotronContainer from '../container/jumbotron';
 import HeaderContainer from "../container/header";
 import Feature from "../component/feature";
+import FooterContainer from "../container/footer";
+import TestimonialContainer from '../container/testimonial';
+import FaqsContainer from '../container/faqs';
+import NewsletterContainer from '../container/newsletter';
 
 export default function Home() {
   return (
@@ -42,6 +46,10 @@ export default function Home() {
       </HeaderContainer>
       <CardContainer />
       <JumbotronContainer />
+      <TestimonialContainer/>
+      <FaqsContainer />
+      <NewsletterContainer />
+      <FooterContainer />
     </>
   );
 }

@@ -99,6 +99,7 @@ export const Frame = styled.div`
   align-items: center;
   width: 80%;
   margin-left: 195px;
+  z-index: 999;
 
   ${Div}:nth-of-type(2) {
     max-width: 255px;
@@ -137,6 +138,7 @@ export const Frame = styled.div`
 export const BurgerMenu = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
   position: fixed;
   padding: 42px 30px;
   top: 0;
@@ -147,6 +149,7 @@ export const BurgerMenu = styled.div`
   max-width: 313px;
   width: 88vw;
   transition: all 0.4s ease-in-out;
+  transition-delay: 0.1s;
   z-index: 1000;
 
   @media (max-width: 290px) {
@@ -168,6 +171,7 @@ export const Overlay = styled.div`
   right: 0;
   bottom: 0;
   width: 100%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.75);
   z-index: 999;
   transform: ${({ show }) => (show ? "translateX(0)" : "translateX(100%)")};

@@ -63,43 +63,45 @@ export default function HeaderContainer({ children, ...restProps }) {
             alt="menu-logo"
             onClick={() => setBurgerStatus(true)}
           />
-          <Header.BurgerMenu show={burgerStatus}>
-            <Header.MenuDiv>
-              <Header.CrossButton
-                src="images/icons/cross-icon.svg"
-                onClick={() => setBurgerStatus(false)}
-              />
 
-              <Header.BurgerMenuItem>
-                <Header.ButtonLink to="#">Home</Header.ButtonLink>
-              </Header.BurgerMenuItem>
-
-              <Header.BurgerMenuItem>
-                <Header.ButtonLink to="#">Gallery</Header.ButtonLink>
-              </Header.BurgerMenuItem>
-
-              <Header.BurgerMenuItem>
-                <Header.ButtonLink to="#">About</Header.ButtonLink>
-              </Header.BurgerMenuItem>
-
-              <Header.BurgerMenuItem>
-                <Header.ButtonLink to="#">Contact</Header.ButtonLink>
-              </Header.BurgerMenuItem>
-
-              <Header.BurgerMenuItem>
-                <Header.Login to="#">Login</Header.Login>
-              </Header.BurgerMenuItem>
-
-              <Header.BurgerMenuItem>
-                <Header.ButtonLink to="#">
-                  <Header.JoinUs>JOIN US</Header.JoinUs>
-                </Header.ButtonLink>
-              </Header.BurgerMenuItem>
-            </Header.MenuDiv>
-          </Header.BurgerMenu>
-          <Header.Overlay show={burgerStatus} />
+          {/* <Header.Overlay show={burgerStatus} /> */}
         </Header.Frame>
       </Header>
+      <Header.BurgerMenu show={burgerStatus}>
+        <Header.MenuDiv>
+          <Header.CrossButton
+            src="images/icons/cross-icon.svg"
+            onClick={() => setBurgerStatus(false)}
+          />
+
+          <Header.BurgerMenuItem>
+            <Header.ButtonLink to="#">Home</Header.ButtonLink>
+          </Header.BurgerMenuItem>
+
+          <Header.BurgerMenuItem>
+            <Header.ButtonLink to="#">Gallery</Header.ButtonLink>
+          </Header.BurgerMenuItem>
+
+          <Header.BurgerMenuItem>
+            <Header.ButtonLink to="#">About</Header.ButtonLink>
+          </Header.BurgerMenuItem>
+
+          <Header.BurgerMenuItem>
+            <Header.ButtonLink to="#">Contact</Header.ButtonLink>
+          </Header.BurgerMenuItem>
+
+          <Header.BurgerMenuItem>
+            <Header.Login to="#">Login</Header.Login>
+          </Header.BurgerMenuItem>
+
+          <Header.BurgerMenuItem>
+            <Header.ButtonLink to="#">
+              <Header.JoinUs>JOIN US</Header.JoinUs>
+            </Header.ButtonLink>
+          </Header.BurgerMenuItem>
+        </Header.MenuDiv>
+      </Header.BurgerMenu>
+      <Header.Overlay show={burgerStatus} />
       {children}
     </>
   );
