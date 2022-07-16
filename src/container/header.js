@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../component/header";
+import * as ROUTES from '../constants/routes'
 
 export default function HeaderContainer({ children, ...restProps }) {
   const [burgerStatus, setBurgerStatus] = useState(false);
@@ -44,13 +45,13 @@ export default function HeaderContainer({ children, ...restProps }) {
 
         <Header.Frame>
           <Header.Div>
-            <Header.Logo to="#">Vidya Sadan</Header.Logo>
+            <Header.Logo to={ROUTES.HOME}>Vidya Sadan</Header.Logo>
           </Header.Div>
           <Header.Div>
-            <Header.ButtonLink to="#">Home</Header.ButtonLink>
-            <Header.ButtonLink to="#">Gallery</Header.ButtonLink>
-            <Header.ButtonLink to="#">About</Header.ButtonLink>
-            <Header.ButtonLink to="#">Contact</Header.ButtonLink>
+            <Header.ButtonLink to={ROUTES.HOME}>Home</Header.ButtonLink>
+            <Header.ButtonLink to={ROUTES.GALLERY}>Gallery</Header.ButtonLink>
+            <Header.ButtonLink to={ROUTES.ABOUT}>About</Header.ButtonLink>
+            <Header.ButtonLink to={ROUTES.CONTACT}>Contact</Header.ButtonLink>
           </Header.Div>
           <Header.Div>
             <Header.Login to="#">Login</Header.Login>
@@ -75,19 +76,19 @@ export default function HeaderContainer({ children, ...restProps }) {
           />
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to="#">Home</Header.ButtonLink>
+            <Header.ButtonLink to={ROUTES.HOME}>Home</Header.ButtonLink>
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to="#">Gallery</Header.ButtonLink>
+            <Header.ButtonLink to={ROUTES.GALLERY}>Gallery</Header.ButtonLink>
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to="#">About</Header.ButtonLink>
+            <Header.ButtonLink to={ROUTES.ABOUT}>About</Header.ButtonLink>
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to="#">Contact</Header.ButtonLink>
+            <Header.ButtonLink to={ROUTES.CONTACT}>Contact</Header.ButtonLink>
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>

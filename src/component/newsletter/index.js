@@ -1,5 +1,5 @@
-import React, { Children } from 'react'
-import { Container, Text, Heading, Div, Frame, ButtonLink,Email,Title} from "./styles/newsletter";
+import React from 'react'
+import { Container, Text, Div, Frame, ButtonLink,Email,Title} from "./styles/newsletter";
 
 export default function NewsLetter({ children, ...restProps}) {
   return <Container {...restProps}>{children}</Container>
