@@ -15,17 +15,17 @@ export default function FooterContainer({ children, ...restProps }) {
                 </Footer.PageLink>
                 <Footer.Div>
                   <Footer.ImgIcon src="images/icons/phone-icon.svg" />
-                  <Footer.PageLink to="#" mailto="tel:9691808377">
-                    (+91)9425489825
+                  <Footer.PageLink to="#" mailto="tel:7000032230">
+                    (+91)7000032230
                   </Footer.PageLink>
                 </Footer.Div>
                 <Footer.Div>
                   <Footer.ImgIcon src="images/icons/email-icon.svg" />
                   <Footer.PageLink
                     to="#"
-                    mailto="mailto:yashsharma2572@gmail.com"
+                    mailto="mailto:vidyasadanschool@gmail.com"
                   >
-                    patelschool@gmail.com
+                    vidyasadanschool@gmail.com
                   </Footer.PageLink>
                 </Footer.Div>
               </Footer.Div>
