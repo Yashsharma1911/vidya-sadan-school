@@ -2,10 +2,6 @@ import React from "react";
 import Contact from "../component/contact";
 
 export default function ContactContainer() {
-// add animation to button
-
-
-
   return (
     <>
       <Contact>
@@ -18,68 +14,60 @@ export default function ContactContainer() {
               as possible
             </Contact.SubHeading>
           </Contact.FrameOne>
-          <Contact.FrameTwo>
-            <Contact.DetailsOne>
-              <Contact.NameDetails>
-                <Contact.Details>Your Name</Contact.Details>
-                <Contact.Name>
-                  <form>
+          <form>
+            <Contact.FrameTwo>
+              <Contact.DetailsOne>
+                <Contact.NameDetails>
+                  <Contact.Details>Your Name</Contact.Details>
+                  <Contact.Name>
                     <input type="text" placeholder="Name" />
-                  </form>
-                </Contact.Name>
-              </Contact.NameDetails>
-              <Contact.EmailDetails>
-                <Contact.Details>Your email</Contact.Details>
-                <Contact.Email>
-                  <form>
+                  </Contact.Name>
+                </Contact.NameDetails>
+                <Contact.EmailDetails>
+                  <Contact.Details>Your email</Contact.Details>
+                  <Contact.Email>
                     <input type="text" placeholder="youremail@gmail.com" />
-                  </form>
-                </Contact.Email>
-              </Contact.EmailDetails>
-            </Contact.DetailsOne>
-            <Contact.DetailsTwo>
-              <Contact.InterestDetails>
-                <Contact.Details>What are you interested</Contact.Details>
-                <Contact.Interest>
-                  <form>
+                  </Contact.Email>
+                </Contact.EmailDetails>
+              </Contact.DetailsOne>
+              <Contact.DetailsTwo>
+                <Contact.InterestDetails>
+                  <Contact.Details>Querry related to field</Contact.Details>
+                  <Contact.Interest>
                     <select name="interest" placeholder="Select">
                       <option value="science">Science</option>
                       <option value="commerce">Commerce</option>
                       <option value="arts">Arts</option>
                       <option value="others">Others</option>
                     </select>
-                  </form>
-                </Contact.Interest>
-              </Contact.InterestDetails>
-              <Contact.NumberDetails>
-                <Contact.Details>Mobile</Contact.Details>
-                <Contact.Number>
-                  <form>
+                  </Contact.Interest>
+                </Contact.InterestDetails>
+                <Contact.NumberDetails>
+                  <Contact.Details>Mobile</Contact.Details>
+                  <Contact.Number>
                     <input type="text" placeholder="+91" />
-                  </form>
-                </Contact.Number>
-              </Contact.NumberDetails>
-            </Contact.DetailsTwo>
-            <Contact.DetailsThree>
-              <Contact.QuerryDetails>
-                <Contact.Details>Message</Contact.Details>
-                <Contact.Querry>
-                  <form>
+                  </Contact.Number>
+                </Contact.NumberDetails>
+              </Contact.DetailsTwo>
+              <Contact.DetailsThree>
+                <Contact.QuerryDetails>
+                  <Contact.Details>Message</Contact.Details>
+                  <Contact.Querry>
                     <textarea
                       rows={5}
                       cols={60}
                       placeholder="Let us know about your querry"
                     ></textarea>
-                  </form>
-                </Contact.Querry>
-              </Contact.QuerryDetails>
-            </Contact.DetailsThree>
-            <Contact.ButtonLink>
-              <Contact.Button>
-                Just Send
-              </Contact.Button>
-            </Contact.ButtonLink>
-          </Contact.FrameTwo>
+                  </Contact.Querry>
+                </Contact.QuerryDetails>
+              </Contact.DetailsThree>
+              <Contact.ButtonLink>
+                <Contact.Button>
+                  Submit
+                </Contact.Button>
+              </Contact.ButtonLink>
+            </Contact.FrameTwo>
+          </form>
         </Contact.Div>
       </Contact>
     </>

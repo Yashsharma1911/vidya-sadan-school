@@ -52,8 +52,9 @@ export const Text = styled.p`
     // text-align: center;
   }
   @media (max-width: 628px){
-    font-size: 35px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 38px;
+    margin: 10px;
   }
 `;
 

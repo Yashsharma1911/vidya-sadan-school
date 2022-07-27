@@ -53,8 +53,9 @@ export const FrameTwo = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 150px;
-
+  
   @media (max-width: 820px) {
+    margin-top: 80px;
     align-items: center;
   }
 `;
@@ -81,7 +82,7 @@ export const Details = styled.p`
 `;
 
 export const Name = styled.div`
-  & > form > input {
+  & > input {
     width: 373px;
     height: 53px;
     font-style: normal;
@@ -93,7 +94,7 @@ export const Name = styled.div`
   }
 
   @media (max-width: 380px) {
-    & > form > input {
+    & > input {
       width: 280px;
     }
   }
@@ -104,7 +105,7 @@ export const EmailDetails = styled.div`
 `;
 
 export const Email = styled.div`
-  & > form > input {
+  & > input {
     width: 373px;
     height: 53px;
     font-style: normal;
@@ -116,7 +117,7 @@ export const Email = styled.div`
   }
 
   @media (max-width: 380px) {
-    & > form > input {
+    & > input {
       width: 280px;
     }
   }
@@ -135,7 +136,7 @@ export const InterestDetails = styled.div`
 `;
 
 export const Interest = styled.div`
-  & > form > select {
+  & > select {
     width: 373px;
     height: 53px;
     padding: 5px;
@@ -146,7 +147,7 @@ export const Interest = styled.div`
   }
 
   @media (max-width: 380px) {
-    & > form > select {
+    & > select {
       width: 280px;
     }
   }
@@ -157,7 +158,7 @@ export const NumberDetails = styled.div`
 `;
 
 export const Number = styled.div`
-  & > form > input {
+  & > input {
     width: 373px;
     height: 53px;
     font-style: normal;
@@ -169,7 +170,7 @@ export const Number = styled.div`
   }
 
   @media (max-width: 380px) {
-    & > form > input {
+    & > input {
       width: 280px;
     }
   }
@@ -182,24 +183,23 @@ export const QuerryDetails = styled.div`
 `;
 
 export const Querry = styled.div`
-  & > form > textarea {
+  & > textarea {
     background: rgba(242, 255, 252, 0.63);
     border: 2px solid rgba(0, 0, 0, 0.02);
     border-radius: 5px;
     font-style: normal;
     padding: 5px;
+    width: 100%;
   }
 
   @media (max-width: 820px) {
-    & > form > textarea {
-      width: 28em;
+    & > textarea {
       height: 10em;
     }
   }
 
   @media (max-width: 380px) {
-    & > form > textarea {
-      width: 21em;
+    & > textarea {
       height: 13em;
     }
   }

@@ -17,26 +17,26 @@ export default function GalleryContainer() {
         </Gallery.Div>
 
         <Gallery.Frame>
-          <Carousel autoPlay interval="5000" transitionTime="5000" infiniteLoop>
+          <Carousel autoPlay interval="2000" transitionTime="1000" infiniteLoop>
             <div>
               <img src="images/pictures/vidya-1.jpeg" alt="" />
-              <p className="legend">Photo 1</p>
+              {/* <p className="legend">Photo 1</p> */}
             </div>
             <div>
               <img src="images/pictures/vidya-2.jpeg" alt="" />
-              <p className="legend">Photo 2</p>
+              {/* <p className="legend">Photo 2</p> */}
             </div>
             <div>
               <img src="images/pictures/vidya-4.jpeg" alt="" />
-              <p className="legend">Photo 3</p>
+              {/* <p className="legend">Photo 3</p> */}
             </div>
             <div>
               <img src="images/pictures/vidya-5.jpeg" alt="" />
-              <p className="legend">Photo 4</p>
+              {/* <p className="legend">Photo 4</p> */}
             </div>
             <div>
               <img src="images/pictures/vidya-6.jpeg" alt="" />
-              <p className="legend">Photo 5</p>
+              {/* <p className="legend">Photo 5</p> */}
             </div>
           </Carousel>
         </Gallery.Frame>
