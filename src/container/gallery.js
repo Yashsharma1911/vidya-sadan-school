@@ -1,6 +1,7 @@
 import React from "react";
 import Gallery from "../component/gallery";
-import photosData from "../fixtures/photos";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 export default function GalleryContainer() {
   return (
@@ -16,25 +17,28 @@ export default function GalleryContainer() {
         </Gallery.Div>
 
         <Gallery.Frame>
-            <Gallery.FrameOne>
-                <Gallery.Image src={photosData[0].src} alt={photosData[0].alt} />
-            </Gallery.FrameOne>
-            <Gallery.FrameTwo>
-                <Gallery.Image src={photosData[1].src} alt={photosData[1].alt} />
-            </Gallery.FrameTwo>
-            <Gallery.FrameThree>
-                <Gallery.Image src={photosData[2].src} alt={photosData[2].alt} />
-            </Gallery.FrameThree>
-            <Gallery.FrameFour>
-                <Gallery.Image src={photosData[3].src} alt={photosData[3].alt} />
-            </Gallery.FrameFour>
-            <Gallery.FrameFive>
-                <Gallery.Image src={photosData[4].src} alt={photosData[4].alt} />
-            </Gallery.FrameFive>
-            <Gallery.FrameSix>
-                <Gallery.Image src={photosData[5].src} alt={photosData[5].alt} />
-            </Gallery.FrameSix>
-
+          <Carousel autoPlay interval="5000" transitionTime="5000" infiniteLoop>
+            <div>
+              <img src="images/pictures/vidya-1.jpeg" alt="" />
+              <p className="legend">Photo 1</p>
+            </div>
+            <div>
+              <img src="images/pictures/vidya-2.jpeg" alt="" />
+              <p className="legend">Photo 2</p>
+            </div>
+            <div>
+              <img src="images/pictures/vidya-4.jpeg" alt="" />
+              <p className="legend">Photo 3</p>
+            </div>
+            <div>
+              <img src="images/pictures/vidya-5.jpeg" alt="" />
+              <p className="legend">Photo 4</p>
+            </div>
+            <div>
+              <img src="images/pictures/vidya-6.jpeg" alt="" />
+              <p className="legend">Photo 5</p>
+            </div>
+          </Carousel>
         </Gallery.Frame>
       </Gallery>
     </>
