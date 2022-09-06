@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "src":"./images/pictures/vidya-1.jpeg"
+    },
+    {
+        "id":2,
+        "src":"./images/pictures/vidya-2.jpeg"
+    },
+    {
+        "id":3,
+        "src":"./images/pictures/vidya-3.jpeg"
+    },
+    {
+        "id":4,
+        "src":"./images/pictures/vidya-4.jpeg"
+    },
+    {
+        "id":5,
+        "src":"./images/pictures/vidya-5.jpeg"
+    },
+    {
+        "id":6,
+        "src":"./images/pictures/vidya-6.jpeg"
+    }
+    
+]
