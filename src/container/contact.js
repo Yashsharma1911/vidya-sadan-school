@@ -1,10 +1,16 @@
 import React from "react";
 import Contact from "../component/contact";
+// import * as ROUTES from '../constants/routes'
+import {useNavigate} from 'react-router-dom';
 
 export default function ContactContainer() {
 // add animation to button
 
+const navigate = useNavigate();
 
+const navigateToThanks = () => {
+  navigate('/thankyou');
+};
 
   return (
     <>
@@ -75,7 +81,7 @@ export default function ContactContainer() {
               </Contact.QuerryDetails>
             </Contact.DetailsThree>
             <Contact.ButtonLink>
-              <Contact.Button>
+              <Contact.Button onClick={navigateToThanks}>
                 Just Send
               </Contact.Button>
             </Contact.ButtonLink>

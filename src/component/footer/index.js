@@ -5,6 +5,7 @@ import {
   Row,
   Column,
   PageLink,
+  PageLinkTo,
   ImgSocialIcon,
   ImgIcon,
   Logo,
@@ -41,7 +42,11 @@ Footer.PageLink = function FooterPageLink({ mailto, children, ...restProps }) {
     >
       {children}
     </PageLink>
-  );
+  );;
+};
+
+Footer.PageLinkTo = function FooterPageLinkTo({ children, ...restProps }) {
+  return <PageLinkTo {...restProps}>{children}</PageLinkTo>
 };
 
 Footer.ImgSocialIcon = function FooterImgSocialIcon({ to, ...restProps }) {

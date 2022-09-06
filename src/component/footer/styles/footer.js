@@ -61,7 +61,40 @@ export const Row = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 `;
+
 export const PageLink = styled(ReactRouterLink)`
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+
+  color: #737373;
+  margin-top: 20px;
+  width: fit-content;
+
+  &:first-of-type {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    cursor: default;
+    color: #252b42;
+    &:hover {
+      color: #252b42;
+    }
+  }
+
+  &:hover {
+    color: #96bb7c;
+  }
+  transition: all 0.2s;
+`;
+
+export const PageLinkTo = styled(ReactRouterLink)`
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;

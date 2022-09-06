@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../component/footer";
+import * as ROUTES from '../constants/routes'
 
 export default function FooterContainer({ children, ...restProps }) {
   return (
@@ -11,7 +12,7 @@ export default function FooterContainer({ children, ...restProps }) {
               <Footer.Logo to="/" src="images/pictures/logo-main.svg" />
               <Footer.Div>
                 <Footer.PageLink to="#">
-                  Mahuar Colony, Shivpuri Road, Karera, India
+                  Behind Police Line Karera Distt. Madhya Pradesh
                 </Footer.PageLink>
                 <Footer.Div>
                   <Footer.ImgIcon src="images/icons/phone-icon.svg" />
@@ -31,21 +32,21 @@ export default function FooterContainer({ children, ...restProps }) {
               </Footer.Div>
             </Footer.Column>
             <Footer.Column>
-              <Footer.PageLink to="#">Other Pages</Footer.PageLink>
-              <Footer.PageLink to="#">About Us</Footer.PageLink>
-              <Footer.PageLink to="#">Contact Us</Footer.PageLink>
-              <Footer.PageLink to="#">Registration</Footer.PageLink>
-              <Footer.PageLink to="#">Result</Footer.PageLink>
-              <Footer.PageLink to="#">Courses</Footer.PageLink>
+              <Footer.PageLinkTo to="#">Other Pages</Footer.PageLinkTo>
+              <Footer.PageLinkTo to={ROUTES.ABOUT}>About Us</Footer.PageLinkTo>
+              <Footer.PageLinkTo to={ROUTES.CONTACT}>Contact Us</Footer.PageLinkTo>
+              {/* <Footer.PageLinkTo to="#">Registration</Footer.PageLinkTo>
+              <Footer.PageLinkTo to="#">Result</Footer.PageLinkTo>
+              <Footer.PageLinkTo to="#">Courses</Footer.PageLinkTo> */}
             </Footer.Column>
             <Footer.Column>
-              <Footer.PageLink to="#">Privacy & Policy</Footer.PageLink>
-              <Footer.PageLink to="#">Security</Footer.PageLink>
-              <Footer.PageLink to="#">Retention of Data</Footer.PageLink>
-              <Footer.PageLink to="#">Sharing Information</Footer.PageLink>
+              <Footer.PageLinkTo to="#">Privacy & Policy</Footer.PageLinkTo>
+              <Footer.PageLinkTo to="#">Security</Footer.PageLinkTo>
+              <Footer.PageLinkTo to="#">Retention of Data</Footer.PageLinkTo>
+              <Footer.PageLinkTo to="#">Sharing Information</Footer.PageLinkTo>
             </Footer.Column>
             <Footer.Column>
-              <Footer.PageLink to="#">Follow Us</Footer.PageLink>
+              <Footer.PageLinkTo to="#">Follow Us</Footer.PageLinkTo>
               <Footer.Div>
                 <Footer.ImgSocialIcon
                   to="#"

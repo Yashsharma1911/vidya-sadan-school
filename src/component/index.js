@@ -10,3 +10,4 @@ export {default as Gallery } from "./gallery";
 export {default as About } from "./about";
 export {default as Teacher } from "./teacher";
 export {default as Contact} from "./contact";
+export {default as ThankYou} from "./thankyou";
