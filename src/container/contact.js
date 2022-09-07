@@ -1,19 +1,10 @@
 import React from "react";
 import Contact from "../component/contact";
-// import * as ROUTES from '../constants/routes'
-import {useNavigate} from 'react-router-dom';
 
 export default function ContactContainer() {
-
-const navigate = useNavigate();
-
-const navigateToThanks = () => {
-  navigate('/thankyou');
-};
-
   return (
     <>
-    <Contact>
+      <Contact>
         <Contact.Div>
           <Contact.FrameOne>
             <Contact.Section>Our memories</Contact.Section>
@@ -23,59 +14,51 @@ const navigateToThanks = () => {
               as possible
             </Contact.SubHeading>
           </Contact.FrameOne>
-         
-            <Contact.FrameTwo>
-              <Contact.DetailsOne>
-                <Contact.NameDetails>
-                  <Contact.Details>Your Name</Contact.Details>
-                  <Contact.Name>
-                    <input type="text" placeholder="Name" />
-                  </Contact.Name>
-                </Contact.NameDetails>
-                <Contact.EmailDetails>
-                  <Contact.Details>Your email</Contact.Details>
-                  <Contact.Email>
-                    <input type="text" placeholder="youremail@gmail.com" />
-                  </Contact.Email>
-                </Contact.EmailDetails>
-              </Contact.DetailsOne>
-              <Contact.DetailsTwo>
-                <Contact.InterestDetails>
-                  <Contact.Details>Querry related to field</Contact.Details>
-                  <Contact.Interest>
-                    <select name="interest" placeholder="Select">
-                      <option value="science">Science</option>
-                      <option value="commerce">Commerce</option>
-                      <option value="arts">Arts</option>
-                      <option value="others">Others</option>
-                    </select>
-                  </Contact.Interest>
-                </Contact.InterestDetails>
-                <Contact.NumberDetails>
-                  <Contact.Details>Mobile</Contact.Details>
-                  <Contact.Number>
-                    <input type="text" placeholder="+91" />
-                  </Contact.Number>
-                </Contact.NumberDetails>
-              </Contact.DetailsTwo>
-              <Contact.DetailsThree>
-                <Contact.QuerryDetails>
-                  <Contact.Details>Message</Contact.Details>
-                  <Contact.Querry>
-                    <textarea
-                      rows={5}
-                      cols={60}
-                      placeholder="Let us know about your querry"
-                    ></textarea>
-                  
-                </Contact.Querry>
-              </Contact.QuerryDetails>
-            </Contact.DetailsThree>
-            <Contact.ButtonLink>
-              <Contact.Button onClick={navigateToThanks}>
-                Just Send
-              </Contact.Button>
-            </Contact.ButtonLink>
+
+          <Contact.FrameTwo>
+            <Contact.Details>
+              <Contact.DetailsHeader>Contact Information</Contact.DetailsHeader>
+
+              <Contact.Mail>
+                <Contact.ImgIcon src="images/icons/email-icon.svg" />
+                <Contact.MailAddress
+                  to="#"
+                  mailto="mailto:vidyasadankarera@gmail.com"
+                >
+                  vidyasadankarera@gmail.com
+                </Contact.MailAddress>
+              </Contact.Mail>
+
+              <Contact.Mobile>
+                <Contact.ImgIcon src="images/icons/phone-icon.svg" />
+                <Contact.MobileNumberOne to="#" mailto="tel:7000032230">
+                  (+91)7000032230,
+                </Contact.MobileNumberOne>
+                <Contact.MobileNumberTwo to="#" mailto="tel:9425773855">
+                  (+91)9425773855
+                </Contact.MobileNumberTwo>
+              </Contact.Mobile>
+
+              <Contact.Address>
+                <Contact.ImgIcon src="images/icons/loc.svg" />
+                <Contact.AddressDetails>
+                  Behind Police Line Karera Distt. Madhya Pradesh
+                </Contact.AddressDetails>
+              </Contact.Address>
+            </Contact.Details>
+            <Contact.Map>
+              <iframe
+                title="map"
+                width="690"
+                height="567"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?width=690&amp;height=567&amp;hl=en&amp;q=vidya%20sadan%20school%20karera+(contact%20form%20map)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>{" "}
+            </Contact.Map>
           </Contact.FrameTwo>
         </Contact.Div>
       </Contact>
