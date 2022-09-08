@@ -1,29 +1,24 @@
 import React from "react";
 import {
-    Container,
-    FrameOne,
-    FrameTwo,
-    Heading,
-    Div,
-    Section,
-    SubHeading,
-    DetailsOne,
-    DetailsTwo,
-    DetailsThree,
-    NameDetails,
-    Details,
-    Name,
-    EmailDetails,
-    Email,
-    InterestDetails,
-    Interest,
-    NumberDetails,
-    Number,
-    QuerryDetails,
-    Querry,
-    ButtonLink,
-    Button,
-  } from "./styles/contact";
+  Container,
+  FrameOne,
+  FrameTwo,
+  Heading,
+  Div,
+  Section,
+  SubHeading,
+  Mail,
+  MailAddress,
+  ImgIcon,
+  MobileNumberOne,
+  MobileNumberTwo,
+  Mobile,
+  Address,
+  AddressDetails,
+  Details,
+  DetailsHeader,
+  Map,
+} from "./styles/contact";
 
 export default function Contact({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -53,81 +48,94 @@ Contact.FrameTwo = function ContactFrameTwo({ children, ...restProps }) {
   return <FrameTwo {...restProps}>{children}</FrameTwo>;
 };
 
-Contact.DetailsOne = function ContactDetailsOne({ children, ...restProps }) {
-  return <DetailsOne {...restProps}>{children}</DetailsOne>;
-};
-
-Contact.NameDetails = function ContactNameDetails({ children, ...restProps }) {
-  return <NameDetails {...restProps}>{children}</NameDetails>;
-};
-
 Contact.Details = function ContactDetails({ children, ...restProps }) {
   return <Details {...restProps}>{children}</Details>;
 };
 
-Contact.Name = function ContactName({ children, ...restProps }) {
-  return <Name {...restProps}>{children}</Name>;
+Contact.Mail = function ContactMail({ children, ...restProps }) {
+  return <Mail {...restProps}>{children}</Mail>;
 };
 
-Contact.EmailDetails = function ContactEmailDetails({
+Contact.MailAddress = function ContactMailAddress({
+  mailto,
   children,
   ...restProps
 }) {
-  return <EmailDetails {...restProps}>{children}</EmailDetails>;
+  return (
+    <MailAddress
+      {...restProps}
+      onClick={(e) => {
+        window.location.href = mailto;
+        e.preventDefault();
+      }}
+    >
+      {children}
+    </MailAddress>
+  );
 };
 
-Contact.Email = function ContactEmail({ children, ...restProps }) {
-  return <Email {...restProps}>{children}</Email>;
+Contact.ImgIcon = function ContactImgIcon({ children, ...restProps }) {
+  return <ImgIcon {...restProps}>{children}</ImgIcon>;
 };
 
-Contact.DetailsTwo = function ContactDetailsTwo({ children, ...restProps }) {
-  return <DetailsTwo {...restProps}>{children}</DetailsTwo>;
+Contact.Mobile = function ContactMobile({ children, ...restProps }) {
+  return <Mobile {...restProps}>{children}</Mobile>;
 };
 
-Contact.InterestDetails = function ContactInterestDetails({
+Contact.MobileNumberOne = function ContactMobileNumberOne({
+  mailto,
   children,
   ...restProps
 }) {
-  return <InterestDetails {...restProps}>{children}</InterestDetails>;
+  return (
+    <MobileNumberOne
+      {...restProps}
+      onClick={(e) => {
+        window.location.href = mailto;
+        e.preventDefault();
+      }}
+    >
+      {children}
+    </MobileNumberOne>
+  );
 };
 
-Contact.Interest = function ContactInterest({ children, ...restProps }) {
-  return <Interest {...restProps}>{children}</Interest>;
-};
-
-Contact.NumberDetails = function ContactNumberDetails({
+Contact.MobileNumberTwo = function ContactMobileNumberTwo({
+  mailto,
   children,
   ...restProps
 }) {
-  return <NumberDetails {...restProps}>{children}</NumberDetails>;
+  return (
+    <MobileNumberTwo
+      {...restProps}
+      onClick={(e) => {
+        window.location.href = mailto;
+        e.preventDefault();
+      }}
+    >
+      {children}
+    </MobileNumberTwo>
+  );
 };
 
-Contact.Number = function ContactNumber({ children, ...restProps }) {
-  return <Number {...restProps}>{children}</Number>;
+Contact.Address = function ContactAddress({ children, ...restProps }) {
+  return <Address {...restProps}>{children}</Address>;
 };
 
-Contact.DetailsThree = function ContactDetailsThree({
+Contact.AddressDetails = function ContactAddressDetails({
   children,
   ...restProps
 }) {
-  return <DetailsThree {...restProps}>{children}</DetailsThree>;
+  return <AddressDetails {...restProps}>{children}</AddressDetails>;
 };
 
-Contact.QuerryDetails = function ContactQuerryDetails({
+Contact.DetailsHeader = function ContactDetailsHeader({
   children,
   ...restProps
 }) {
-  return <QuerryDetails {...restProps}>{children}</QuerryDetails>;
+  return <DetailsHeader {...restProps}>{children}</DetailsHeader>;
 };
 
-Contact.Querry = function ContactQuerry({ children, ...restProps }) {
-  return <Querry {...restProps}>{children}</Querry>;
+Contact.Map = function ContactMap({ children, ...restProps }) {
+  return <Map {...restProps}>{children}</Map>;
 };
-
-Contact.ButtonLink = function ContactButtonLink({ children, ...restProps}) {
-    return <ButtonLink {...restProps}>{children}</ButtonLink>
-}
-
-Contact.Button = function ContactButton({ children, ...restProps}) {
-    return <Button {...restProps}>{children}</Button>
-}

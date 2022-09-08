@@ -73,7 +73,7 @@ export default function AboutContainer() {
 
             <About.Poster>
               <About.Image
-                src="images/pictures/headmaster.svg"
+                src="images/pictures/vidyaprinciple.jpeg"
                 alt=""
               ></About.Image>
               <About.Head>Head Master</About.Head>
