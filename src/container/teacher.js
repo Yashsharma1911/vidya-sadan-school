@@ -7,7 +7,7 @@ export default function TeacherContainer(props) {
       <Teacher>
         <Teacher.Section>
           <Teacher.SectionImage>
-            <img src={props.image} alt='' />
+            <img src={props.image} alt='' width="356px" height="400px" style={{ objectFit: "cover", objectPosition: "50% 50%" }} />
           </Teacher.SectionImage>
           <Teacher.SectionName>
             <Teacher.Name>{props.name}</Teacher.Name>

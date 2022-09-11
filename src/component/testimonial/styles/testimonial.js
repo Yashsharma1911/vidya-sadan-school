@@ -53,7 +53,7 @@ export const Frame = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1100px;
   witdh: 10%;
 
   @media (max-width: 1000px) {
@@ -78,6 +78,8 @@ export const Image = styled.img`
   height: 128px;
   width: 128px;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: 30% 10%;
 
   @media (max-width: 1000px) {
     margin-top: 30px;

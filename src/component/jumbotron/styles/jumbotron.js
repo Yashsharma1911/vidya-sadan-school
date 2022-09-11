@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as ReactRouterLink } from "react-router-dom";
 
 export const Div = styled.div`
   @media (max-width: 1000px) {
@@ -97,7 +98,7 @@ export const Icon = styled.img`
     padding-left: 10px;
   }
 `;
-export const ButtonLink = styled.div`
+export const ButtonLink = styled(ReactRouterLink)`
   display: flex;
   flex-direction: row;
   align-items: center;

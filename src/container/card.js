@@ -18,16 +18,16 @@ export default function CardContainer() {
           <Card.Row>
             <Card.Frame>
               <Card.Logo src="images/icons/computerIcon.svg" ></Card.Logo>
-              <Card.SubHeading>Expert Instruction</Card.SubHeading>
+              <Card.SubHeading>Learning Environment</Card.SubHeading>
               <Card.Image src="images/icons/fixedline.png"></Card.Image>
-              <Card.Text>The gradual accumulation and small-scale..</Card.Text>
+              <Card.Text>we provied amazing learning environment</Card.Text>
             </Card.Frame>
 
             <Card.Frame>
               <Card.Logo img src="images/icons/owlIcon.svg"></Card.Logo>
               <Card.SubHeading>Certified Teacher</Card.SubHeading>
               <Card.Image img src="images/icons/fixedline.png"></Card.Image>
-              <Card.Text>The gradual accumulation and small-scale..</Card.Text>
+              <Card.Text>we provide instructions from certified teacher</Card.Text>
             </Card.Frame>
           </Card.Row>
         </Card.Div>

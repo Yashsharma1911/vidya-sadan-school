@@ -11,7 +11,7 @@ export const Container = styled.div`
     position: fixed;
     top: 0;
     transform: ${({ background }) =>
-      background ? "none" : "translate3d(0, -100%, 0)"};
+    background ? "none" : "translate3d(0, -100%, 0)"};
     opacity: ${({ background }) => (background ? "1" : "0")};
     height: ${({ background }) => (background ? "100%" : "0")};
     height: 80px;
@@ -36,7 +36,21 @@ export const HeroShapeDiv = styled.div`
   }
 `;
 
-export const ButtonLink = styled(ReactRouterLink)`
+export const ButtonLink = styled.a`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: #96bb7c;
+  }
+`;
+export const ButtonRouteLink = styled(ReactRouterLink)`
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

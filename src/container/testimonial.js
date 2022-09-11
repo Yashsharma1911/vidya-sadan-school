@@ -17,21 +17,28 @@ export default function TestimonialContainer() {
         <Testimonial.Div>
           <Testimonial.Frame>
             <Testimonial.Students>
-              <Testimonial.Image src="images/pictures/student1.svg"></Testimonial.Image>
-              <Testimonial.Name>Riha Khan</Testimonial.Name>
-              <Testimonial.Position>class-1</Testimonial.Position>
+              <Testimonial.Image src="images/pictures/toppers/anirudh-goswami.jpeg"></Testimonial.Image>
+              <Testimonial.Name>Aniruddh Puri Goswami</Testimonial.Name>
+              <Testimonial.Position>class-LKG</Testimonial.Position>
             </Testimonial.Students>
 
             <Testimonial.Students>
-              <Testimonial.Image src="images/pictures/student1.svg"></Testimonial.Image>
-              <Testimonial.Name>Vishal Sharma</Testimonial.Name>
-              <Testimonial.Position>class-3</Testimonial.Position>
+              <Testimonial.Image src="images/pictures/toppers/Niyati-shakya.jpeg"></Testimonial.Image>
+              <Testimonial.Name>Niyati Shakya</Testimonial.Name>
+              <Testimonial.Position>class-2</Testimonial.Position>
             </Testimonial.Students>
 
             <Testimonial.Students>
-              <Testimonial.Image src="images/pictures/student1.svg"></Testimonial.Image>
-              <Testimonial.Name>Anuj Tomar</Testimonial.Name>
-              <Testimonial.Position>class-5</Testimonial.Position>
+              <Testimonial.Image src="images/pictures/toppers/abhesh-pal.jpeg"></Testimonial.Image>
+              <Testimonial.Name>Abhesh Pal</Testimonial.Name>
+              <Testimonial.Position>class-7</Testimonial.Position>
+            </Testimonial.Students>
+
+
+            <Testimonial.Students>
+              <Testimonial.Image src="images/pictures/toppers/pragati-prajapati.jpeg"></Testimonial.Image>
+              <Testimonial.Name>Pragati Prajapati</Testimonial.Name>
+              <Testimonial.Position>class-8</Testimonial.Position>
             </Testimonial.Students>
           </Testimonial.Frame>
         </Testimonial.Div>

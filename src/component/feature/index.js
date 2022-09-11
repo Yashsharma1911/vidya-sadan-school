@@ -11,6 +11,7 @@ import {
   TagText,
   Text,
   ButtonLink,
+  ButtonRouteLink,
   Wrap
 } from "./styles/feature";
 
@@ -44,6 +45,10 @@ Feature.Button = function FeatureButton({ children, ...restProps }) {
 
 Feature.ButtonLink = function FeatureButtonLink({ children, ...restProps }) {
   return <ButtonLink {...restProps}>{children}</ButtonLink>;
+};
+
+Feature.ButtonRouteLink = function FeatureButtonRouteLink({ children, ...restProps }) {
+  return <ButtonRouteLink {...restProps}>{children}</ButtonRouteLink>;
 };
 
 Feature.Img = function FeatureImg({ ...restProps }) {

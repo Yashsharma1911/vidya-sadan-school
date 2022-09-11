@@ -184,3 +184,7 @@ export const Logo = styled.img`
   width: 105px;
   height: 105px;
 `;
+
+export const LogoLink = styled.a`
+  text-decoration: none;
+`

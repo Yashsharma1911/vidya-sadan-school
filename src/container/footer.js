@@ -24,9 +24,9 @@ export default function FooterContainer({ children, ...restProps }) {
                   <Footer.ImgIcon src="images/icons/email-icon.svg" />
                   <Footer.PageLink
                     to="#"
-                    mailto="mailto:vidyasadanschool@gmail.com"
+                    mailto="mailto:vidyasadankarera@gmail.com"
                   >
-                    vidyasadanschool@gmail.com
+                    vidyasadankarera@gmail.com
                   </Footer.PageLink>
                 </Footer.Div>
               </Footer.Div>
@@ -47,22 +47,15 @@ export default function FooterContainer({ children, ...restProps }) {
             </Footer.Column>
             <Footer.Column>
               <Footer.PageLinkTo to="#">Follow Us</Footer.PageLinkTo>
-              <Footer.Div>
+              <Footer.Div style={{ justifyContent: "left" }}>
                 <Footer.ImgSocialIcon
-                  to="#"
+                  to="https://www.facebook.com/profile.php?id=100054500258960"
                   src="images/icons/facebook-icon.svg"
+                  style={{ marginRight: "1.5rem" }}
                 />
                 <Footer.ImgSocialIcon
-                  to="#"
+                  to="https://twitter.com/vidyasadan12"
                   src="images/icons/twitter-icon.svg"
-                />
-                <Footer.ImgSocialIcon
-                  to="#"
-                  src="images/icons/linkedin-icon.svg"
-                />
-                <Footer.ImgSocialIcon
-                  to="#"
-                  src="images/icons/instagram-icon.svg"
                 />
               </Footer.Div>
             </Footer.Column>
@@ -70,8 +63,7 @@ export default function FooterContainer({ children, ...restProps }) {
         </Footer.RowWrap>
         <Footer.CopyRightDiv>
           <Footer.Text>
-            Copyright 2022 © Vidya Sadan School, Figmaland, Icons8, and other
-            contributors. All rights reserved
+            Copyright 2022 © Vidya Sadan School. All rights reserved, made by Yash Sharma and Sudhanshu Dasgupta.
           </Footer.Text>
         </Footer.CopyRightDiv>
       </Footer>

@@ -72,9 +72,14 @@ export const Details = styled.p`
   color: #000000;
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
 
   @media (max-width: 517px) {
     align-items: center;
+  }
+  @media (min-width: 1060px) {
+    margin-right: 40px;
+  }
 `;
 
 export const Mail = styled.div`
@@ -85,6 +90,12 @@ export const Mail = styled.div`
 
 export const MailAddress = styled.p`
   margin-left: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 8px;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const ImgIcon = styled.img``;
@@ -93,6 +104,7 @@ export const Mobile = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 30px;
+  cursor: pointer;
 `;
 
 export const MobileNumberOne = styled.p`
@@ -138,5 +150,6 @@ export const Map = styled.div`
     iframe {
       width: 350px;
       height: 420px;
-
+    }
+  }
 `;

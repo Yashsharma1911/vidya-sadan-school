@@ -14,6 +14,7 @@ import {
   MenuDiv,
   CrossButton,
   BurgerMenuItem,
+  ButtonRouteLink
 } from "./styles/header";
 
 export default function Header({ children, ...restProps }) {
@@ -30,6 +31,10 @@ Header.Logo = function HeaderLogo({ children, ...restProps }) {
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
   return <ButtonLink {...restProps}>{children}</ButtonLink>;
+};
+
+Header.ButtonRouteLink = function HeaderButtonRouteLink({ children, ...restProps }) {
+  return <ButtonRouteLink {...restProps}>{children}</ButtonRouteLink>;
 };
 
 Header.Login = function HeaderLogin({ children, ...restProps }) {
@@ -64,7 +69,7 @@ Header.BurgerMenuItem = function HeaderBurgerMenuItem({
 };
 
 Header.Overlay = function HeaderOverlay({ children, ...restProps }) {
-  return <Overlay {...restProps}/>;
+  return <Overlay {...restProps} />;
 };
 
 Header.MenuDiv = function HeaderMenuDiv({ children, ...restProps }) {

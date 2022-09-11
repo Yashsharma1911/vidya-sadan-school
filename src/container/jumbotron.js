@@ -1,6 +1,9 @@
 import React from "react";
 import Jumbotron from "../component/jumbotron";
 
+// ROUTES
+import * as ROUTES from "../constants/routes";
+
 export default function JumbotronContainer() {
   return (
     <>
@@ -14,11 +17,11 @@ export default function JumbotronContainer() {
             <Jumbotron.Tag hr></Jumbotron.Tag>
             <Jumbotron.Heading>Discover Our School</Jumbotron.Heading>
             <Jumbotron.Text>
-              Vidhya sadan school established in Karera (M.P.) in 2009. Affiliated
+              Vidya sadan school established in Karera (M.P.) in 2009. Affiliated
               to Madhya Pradesh Board of Secondary Education. It has been
               operating successfully for many years.
             </Jumbotron.Text>
-            <Jumbotron.ButtonLink>
+            <Jumbotron.ButtonLink to={ROUTES.ABOUT}>
               <Jumbotron.Text>Learn more</Jumbotron.Text>
               <Jumbotron.Icon src="images/icons/@none.svg"></Jumbotron.Icon>
             </Jumbotron.ButtonLink>

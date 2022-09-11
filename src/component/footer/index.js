@@ -12,6 +12,7 @@ import {
   Div,
   CopyRightDiv,
   RowWrap,
+  LogoLink
 } from "./styles/footer";
 import { Link } from "react-router-dom";
 
@@ -51,9 +52,9 @@ Footer.PageLinkTo = function FooterPageLinkTo({ children, ...restProps }) {
 
 Footer.ImgSocialIcon = function FooterImgSocialIcon({ to, ...restProps }) {
   return (
-    <Link to={to}>
+    <LogoLink href={to}>
       <ImgSocialIcon {...restProps} />
-    </Link>
+    </LogoLink>
   );
 };
 

@@ -1,7 +1,29 @@
 import React from "react";
 import Gallery from "../component/gallery";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import ImageGallery from 'react-image-gallery';
+import "./gallery.css";
+
+import photos from "../fixtures/photos.json";
+
+const property = {
+  showIndex: false,
+  showBullets: false,
+  infinite: true,
+  showThumbnails: true,
+  showFullscreenButton: true,
+  showGalleryFullscreenButton: true,
+  showPlayButton: true,
+  showGalleryPlayButton: true,
+  showNav: true,
+  isRTL: false,
+  slideDuration: 450,
+  slideInterval: 2000,
+  slideOnThumbnailOver: false,
+  thumbnailPosition: 'bottom',
+  showVideo: {},
+  useWindowKeyDown: true,
+}
 
 export default function GalleryContainer() {
   return (
@@ -17,28 +39,7 @@ export default function GalleryContainer() {
         </Gallery.Div>
 
         <Gallery.Frame>
-          <Carousel autoPlay interval="2000" transitionTime="1000" infiniteLoop>
-            <div>
-              <img src="images/pictures/vidya-1.jpeg" alt="" />
-              {/* <p className="legend">Photo 1</p> */}
-            </div>
-            <div>
-              <img src="images/pictures/vidya-2.jpeg" alt="" />
-              {/* <p className="legend">Photo 2</p> */}
-            </div>
-            <div>
-              <img src="images/pictures/vidya-4.jpeg" alt="" />
-              {/* <p className="legend">Photo 3</p> */}
-            </div>
-            <div>
-              <img src="images/pictures/vidya-5.jpeg" alt="" />
-              {/* <p className="legend">Photo 4</p> */}
-            </div>
-            <div>
-              <img src="images/pictures/vidya-6.jpeg" alt="" />
-              {/* <p className="legend">Photo 5</p> */}
-            </div>
-          </Carousel>
+          <ImageGallery items={photos} {...property} />
         </Gallery.Frame>
       </Gallery>
     </>

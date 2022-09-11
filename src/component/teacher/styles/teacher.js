@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+height: 542px;
+margin: 10px auto;
+`;
 
 export const Section = styled.div`
   display: flex;
@@ -9,6 +12,7 @@ export const Section = styled.div`
   width: 100%;
   max-width: 460px;
   padding: 15px;
+
 
   &:hover {
     cursor: pointer;
@@ -21,6 +25,9 @@ export const SectionImage = styled.div`
   width: 356px;
   height: 400px;
   border-radius: 5px;
+  overflow: hidden;
+  object-fit:cover;
+   object-position:50% 50%;
 
 //   @media (max-width: 375px) {
 //     width: 300px;
@@ -42,7 +49,7 @@ export const SectionName = styled.div`
 export const Name = styled.p`
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   letter-spacing: 0.1px;
   color: #252b42;
@@ -51,7 +58,7 @@ export const Name = styled.p`
 export const Branch = styled.p`
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   letter-spacing: 0.1px;
   color: #96bb7c;

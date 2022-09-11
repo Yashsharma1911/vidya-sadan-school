@@ -57,7 +57,7 @@ export default function ContactContainer() {
                 marginwidth="0"
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?width=690&amp;height=567&amp;hl=en&amp;q=vidya%20sadan%20school%20karera+(contact%20form%20map)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ></iframe>{" "}
+              ></iframe>
             </Contact.Map>
           </Contact.FrameTwo>
         </Contact.Div>

@@ -155,5 +155,12 @@ export const Frame = styled.div`
     flex-direction: column-reverse;
   }
 `;
-export const ButtonLink = styled(ReactRouterLink)``;
+
+export const ButtonLink = styled.a`
+  cursor: pointer;
+`;
+export const ButtonRouteLink = styled(ReactRouterLink)`
+  cursor: pointer;
+`;
+
 export const Wrap = styled.div``;

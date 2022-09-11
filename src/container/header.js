@@ -48,14 +48,14 @@ export default function HeaderContainer({ children, ...restProps }) {
             <Header.Logo to={ROUTES.HOME}>Vidya Sadan</Header.Logo>
           </Header.Div>
           <Header.Div>
-            <Header.ButtonLink to={ROUTES.HOME}>Home</Header.ButtonLink>
-            <Header.ButtonLink to={ROUTES.GALLERY}>Gallery</Header.ButtonLink>
-            <Header.ButtonLink to={ROUTES.ABOUT}>About</Header.ButtonLink>
-            <Header.ButtonLink to={ROUTES.CONTACT}>Contact</Header.ButtonLink>
+            <Header.ButtonRouteLink to={ROUTES.HOME}>Home</Header.ButtonRouteLink>
+            <Header.ButtonRouteLink to={ROUTES.GALLERY}>Gallery</Header.ButtonRouteLink>
+            <Header.ButtonRouteLink to={ROUTES.ABOUT}>About</Header.ButtonRouteLink>
+            <Header.ButtonRouteLink to={ROUTES.CONTACT}>Contact</Header.ButtonRouteLink>
           </Header.Div>
           <Header.Div>
             <Header.Login to="#">Login</Header.Login>
-            <Header.ButtonLink to="#">
+            <Header.ButtonLink href="https://forms.gle/yxUBa1U3fyJHVdSH6" target="_blank">
               <Header.JoinUs>JOIN US</Header.JoinUs>
             </Header.ButtonLink>
           </Header.Div>
@@ -76,19 +76,19 @@ export default function HeaderContainer({ children, ...restProps }) {
           />
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to={ROUTES.HOME}>Home</Header.ButtonLink>
+            <Header.ButtonRouteLink to={ROUTES.HOME}>Home</Header.ButtonRouteLink>
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to={ROUTES.GALLERY}>Gallery</Header.ButtonLink>
+            <Header.ButtonRouteLink to={ROUTES.GALLERY}>Gallery</Header.ButtonRouteLink>
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to={ROUTES.ABOUT}>About</Header.ButtonLink>
+            <Header.ButtonRouteLink to={ROUTES.ABOUT}>About</Header.ButtonRouteLink>
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to={ROUTES.CONTACT}>Contact</Header.ButtonLink>
+            <Header.ButtonRouteLink to={ROUTES.CONTACT}>Contact</Header.ButtonRouteLink>
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>
@@ -96,7 +96,7 @@ export default function HeaderContainer({ children, ...restProps }) {
           </Header.BurgerMenuItem>
 
           <Header.BurgerMenuItem>
-            <Header.ButtonLink to="#">
+            <Header.ButtonLink href="https://forms.gle/yxUBa1U3fyJHVdSH6" target="_blank">
               <Header.JoinUs>JOIN US</Header.JoinUs>
             </Header.ButtonLink>
           </Header.BurgerMenuItem>
