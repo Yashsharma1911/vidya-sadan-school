@@ -113,6 +113,7 @@ export const Poster = styled.div`
 
   @media(min-width: 900px){
     margin-left: 40px;
+    margin-bottom: 20px;
   }
 
   

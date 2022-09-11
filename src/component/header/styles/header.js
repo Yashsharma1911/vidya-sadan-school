@@ -202,7 +202,7 @@ export const CrossButton = styled.img`
 `;
 
 export const BurgerMenuItem = styled.div`
-  ${ButtonLink},${Login} {
+  ${ButtonRouteLink},${Login} {
     display: block;
     text-align: left;
     width: 100%;
